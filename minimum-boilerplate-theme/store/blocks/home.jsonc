@@ -10,7 +10,7 @@
     "children": ["flex-layout.col"]
   },
   "flex-layout.col":{
-    "children": ["tab-layout#category", "slider-layout#featuredProduct"]
+    "children": ["slider-layout#featuredProduct", "tab-layout#category"]
   },
   "slider-layout#featuredProduct": {
     "props":{
@@ -37,6 +37,8 @@
       "maxHeight": "100%"
     }
   },
+  // adicionaremos o tab layout
+
  "tab-layout#category": {
    "children": [
      "tab-list#category",
@@ -44,48 +46,171 @@
    ],
    "props": {
      "blockClass": "category",
-     "defaultActiveTabId": "category1"
+     "defaultActiveTabId": "Corinthias"
    }
  },
  "tab-list#category": {
+  //  cada children do category será a categoria
    "children": [
-     "tab-list.item#category1",
-     "tab-list.item#category2"
+     "tab-list.item#Corinthias",
+     "tab-list.item#Divertidos",
+     "tab-list.item#Guerreiros",
+     "tab-list.item#Palmeiras",
+     "tab-list.item#Promoção",
+     "tab-list.item#Signos"
    ]
  },
- "tab-list.item#category1": {
+ "tab-list.item#Corinthias": {
    "props": {
-     "tabId": "category1",
-     "label": "category 1",
+     "tabId": "Corinthias",
+     "label": "Corinthias",
      "defaultActiveTab": true
    }
  },
- "tab-list.item#category2": {
+ "tab-list.item#Divertidos": {
    "props": {
-     "tabId": "category2",
-     "label": "category 2"
+     "tabId": "Divertidos",
+     "label": "Divertidos"
    }
  },
+"tab-list.item#Guerreiros": {
+  "props": {
+    "tabId": "Guerreiros",
+    "label": "Guerreiros",
+    "defaultActiveTab": true
+  }
+},
+"tab-list.item#Palmeiras": {
+  "props": {
+    "tabId": "Palmeiras",
+    "label": "Palmeiras"
+  }
+},
+"tab-list.item#Promoção": {
+  "props": {
+    "tabId": "Promoção",
+    "label": "Promoção",
+    "defaultActiveTab": true
+  }
+},
+"tab-list.item#Signos": {
+  "props": {
+    "tabId": "Signos",
+    "label": "Signos"
+  }
+},
+
+//  ---------------
+
  "tab-content#category": {
    "children": [
-     "tab-content.item#category1",
-     "tab-content.item#category2"
+     "tab-content.item#Corinthias",
+     "tab-content.item#Divertidos",
+     "tab-content.item#Guerreiros",
+     "tab-content.item#Palmeiras",
+     "tab-content.item#Promoção",
+     "tab-content.item#Signos"
    ]
  },
- "tab-content.item#category1": {
+ "tab-content.item#Corinthias": {
    "children": [
-     "product-list"
+    "list-context.product-list#Corinthias"
    ],
    "props": {
-     "tabId": "category1"
+     "tabId": "Corinthias"
    }
  },
- "tab-content.item#category2": {
-   "children": [
-     "newsletter"
-   ],
-   "props": {
-     "tabId": "category2"
-   }
+ "list-context.product-list#Corinthias":{
+    "blocks": ["product-summary.shelf#tab-product"],
+    "children": ["slider-layout#tab-product"],
+    "props":{
+      "category": "20/22"
+    }
+  },
+  "tab-content.item#Divertidos": {
+    "children": [
+     "list-context.product-list#Divertidos"
+    ],
+    "props": {
+      "tabId": "Divertidos"
+    }
+  },
+  "list-context.product-list#Divertidos":{
+     "blocks": ["product-summary.shelf#tab-product"],
+     "children": ["slider-layout#tab-product"],
+     "props":{
+       "category": "20/25"
+     }
+   },
+   "tab-content.item#Guerreiros": {
+    "children": [
+     "list-context.product-list#Guerreiros"
+    ],
+    "props": {
+      "tabId": "Guerreiros"
+    }
+  },
+  "list-context.product-list#Guerreiros":{
+     "blocks": ["product-summary.shelf#tab-product"],
+     "children": ["slider-layout#tab-product"],
+     "props":{
+       "category": "20/27"
+     }
+   },
+   "tab-content.item#Palmeiras": {
+    "children": [
+     "list-context.product-list#Palmeiras"
+    ],
+    "props": {
+      "tabId": "Palmeiras"
+    }
+  },
+  "list-context.product-list#Palmeiras":{
+     "blocks": ["product-summary.shelf#tab-product"],
+     "children": ["slider-layout#tab-product"],
+     "props":{
+       "category": "20/23"
+     }
+   },
+   "tab-content.item#Promoção": {
+    "children": [
+     "list-context.product-list#Promoção"
+    ],
+    "props": {
+      "tabId": "Promoção"
+    }
+  },
+  "list-context.product-list#Promoção":{
+     "blocks": ["product-summary.shelf#tab-product"],
+     "children": ["slider-layout#tab-product"],
+     "props":{
+       "category": "20/24"
+     }
+   },
+   "tab-content.item#Signos": {
+    "children": [
+     "list-context.product-list#Signos"
+    ],
+    "props": {
+      "tabId": "Signos"
+    }
+  },
+  "list-context.product-list#Signos":{
+     "blocks": ["product-summary.shelf#tab-product"],
+     "children": ["slider-layout#tab-product"],
+     "props":{
+       "category": "20/21"
+     }
+   },
+ "slider-layout#tab-product":{},
+ "product-summary.shelf#tab-product":{
+  "children": [
+    "product-summary-name",
+    "product-summary-description",
+    "product-summary-image",
+    "product-summary-price",
+    "product-summary-sku-selector",
+    "product-summary-buy-button"
+  ]
  }
 }
