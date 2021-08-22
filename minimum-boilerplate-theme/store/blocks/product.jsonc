@@ -1,7 +1,6 @@
 {
   "store.product": {
     "children": [
-      "breadcrumb",
       "flex-layout.row#main"
     ]
   },
@@ -16,7 +15,7 @@
   },
   "flex-layout.col#right": {
     "children": [
-      "vtex.product-list:product-name",
+      "vtex.store-components:product-name",
       "product-identifier.product",
       "product-price",
       "flex-layout.row#qty-sku",

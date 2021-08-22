@@ -88,7 +88,7 @@
   },
   "icon-cart#minicart-icon": {
     "props": {
-      "size": 24
+      "size": 18
     }
   },
   "minicart-base-content": {
@@ -151,7 +151,7 @@
   },
   "rich-text#minicart-default-empty-state": {
     "props": {
-      "text": "Your cart is empty."
+      "text": "Seu carrinho está vazio."
     }
   }
 }
