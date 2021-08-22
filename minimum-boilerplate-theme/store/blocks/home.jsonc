@@ -1,0 +1,91 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row"
+    ]
+  },
+  "flex-layout.row":{
+    "props":{
+    },
+    "children": ["flex-layout.col"]
+  },
+  "flex-layout.col":{
+    "children": ["tab-layout#category", "slider-layout#featuredProduct"]
+  },
+  "slider-layout#featuredProduct": {
+    "props":{
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children":["image#teste1","image#teste2"]
+  },
+  "image#teste1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T232451Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0df3f5688bbdbd2bed331dad5227017c3ed4f086d4852ebfdcaf9641eb7c7fdf",
+      "maxHeight": "100%"
+    }
+  },
+  "image#teste2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T232451Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0df3f5688bbdbd2bed331dad5227017c3ed4f086d4852ebfdcaf9641eb7c7fdf",
+      "maxHeight": "100%"
+    }
+  },
+ "tab-layout#category": {
+   "children": [
+     "tab-list#category",
+     "tab-content#category"
+   ],
+   "props": {
+     "blockClass": "category",
+     "defaultActiveTabId": "category1"
+   }
+ },
+ "tab-list#category": {
+   "children": [
+     "tab-list.item#category1",
+     "tab-list.item#category2"
+   ]
+ },
+ "tab-list.item#category1": {
+   "props": {
+     "tabId": "category1",
+     "label": "category 1",
+     "defaultActiveTab": true
+   }
+ },
+ "tab-list.item#category2": {
+   "props": {
+     "tabId": "category2",
+     "label": "category 2"
+   }
+ },
+ "tab-content#category": {
+   "children": [
+     "tab-content.item#category1",
+     "tab-content.item#category2"
+   ]
+ },
+ "tab-content.item#category1": {
+   "children": [
+     "product-list"
+   ],
+   "props": {
+     "tabId": "category1"
+   }
+ },
+ "tab-content.item#category2": {
+   "children": [
+     "newsletter"
+   ],
+   "props": {
+     "tabId": "category2"
+   }
+ }
+}
