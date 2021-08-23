@@ -1,26 +1,112 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
-  "footer-layout.desktop": { 
+  "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer"
     ]
   },
-  "footer-layout.mobile": { 
+  "footer-layout.mobile": {
     "children": [
       "flex-layout.row#footer"
     ]
   },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
+  "flex-layout.row#footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "blockClass": "footerMenu"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footermenu"
+    ]
+  },
+  "vtex.menu@2.x:menu#footermenu": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": "profile",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Entrar",
+            "text": "Entrar"
+          },
+          "iconProps": {
+            "id": "hpa-profile",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-Desafios",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Desafios",
+            "text": "Desafios"
+          },
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": "loja",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Loja",
+            "text": "Loja"
+          },
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-telemarketing",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Suporte",
+            "text": "Suporte"
+          },
+          "iconProps": {
+            "id": "hpa-telemarketing",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "rebel-pink",
+            "mutedClassName": "c-action-primary"
+          }
+        }
+      ]
     }
   }
 }

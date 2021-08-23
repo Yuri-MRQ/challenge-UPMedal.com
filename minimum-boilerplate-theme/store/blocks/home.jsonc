@@ -10,7 +10,7 @@
     "children": ["flex-layout.col"]
   },
   "flex-layout.col":{
-    "children": ["slider-layout#featuredProduct", "tab-layout#category"]
+    "children": ["tab-layout#category"]
   },
   "slider-layout#featuredProduct": {
     "props":{
@@ -23,17 +23,17 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     },
-    "children":["image#teste1","image#teste2"]
+    "children":["image#emphasis1","image#emphasis2"]
   },
-  "image#teste1": {
+  "image#emphasis1": {
     "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T232451Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0df3f5688bbdbd2bed331dad5227017c3ed4f086d4852ebfdcaf9641eb7c7fdf",
+      "src": "assets/destaque-1.png",
       "maxHeight": "100%"
     }
   },
-  "image#teste2": {
+  "image#emphasis2": {
     "props": {
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210821%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210821T232451Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=0df3f5688bbdbd2bed331dad5227017c3ed4f086d4852ebfdcaf9641eb7c7fdf",
+      "src": "assets/destaque-2.png",
       "maxHeight": "100%"
     }
   },
@@ -42,6 +42,7 @@
  "tab-layout#category": {
    "children": [
      "tab-list#category",
+     "slider-layout#featuredProduct",
      "tab-content#category"
    ],
    "props": {
@@ -50,6 +51,9 @@
    }
  },
  "tab-list#category": {
+   "props":{
+     "blockClass": "tab-list-home"
+   },
   //  cada children do category será a categoria
    "children": [
      "tab-list.item#Corinthias",

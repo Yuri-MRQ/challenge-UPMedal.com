@@ -1,0 +1,8 @@
+{
+    "store.custom#login": {
+      "blocks": ["flex-layout.row#alogin"]
+    },
+    "flex-layout.row#alogin": {
+        "children":["login-content"]
+    }
+}
