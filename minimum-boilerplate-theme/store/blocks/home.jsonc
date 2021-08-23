@@ -216,5 +216,14 @@
     "product-summary-sku-selector",
     "product-summary-buy-button"
   ]
- }
+ },
+ "category-menu": {
+  "props": {
+    "showAllDepartments": false,
+    "showSubcategories": false,
+    "menuDisposition": "center",
+    "departments": [],
+    "sortSubcategories": "name"
+  }
+}
 }

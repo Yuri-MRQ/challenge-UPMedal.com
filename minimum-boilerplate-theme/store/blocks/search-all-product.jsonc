@@ -1,0 +1,20 @@
+// store/blocks/search-landing.jsonc
+{
+    "store.custom#landing": {
+      "blocks": ["search-result-layout.customQuery"]
+    },
+    "search-result-layout.customQuery": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 8,
+          "queryField": "Corinthias",
+          "mapField": "ft"
+        }
+      },
+      "blocks": [
+       "search-result-layout.desktop"
+         ]
+    }
+  }

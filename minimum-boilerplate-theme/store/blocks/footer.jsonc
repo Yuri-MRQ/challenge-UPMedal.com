@@ -33,7 +33,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/login",
             "noFollow": false,
             "tagTitle": "Entrar",
             "text": "Entrar"
@@ -59,7 +59,7 @@
             "text": "Desafios"
           },
           "iconProps": {
-            "id": "hpa-cart",
+            "id": "mpa-globe",
             "size": 16,
             "viewBox": "0 0 16 16",
             "activeClassName": "rebel-pink",
@@ -73,7 +73,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/upmedal",
             "noFollow": false,
             "tagTitle": "Loja",
             "text": "Loja"
@@ -93,7 +93,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "https://api.whatsapp.com/send?phone=5511964335064&text=Gostaria%20de%20suporte",
             "noFollow": false,
             "tagTitle": "Suporte",
             "text": "Suporte"

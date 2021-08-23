@@ -1,5 +1,8 @@
 {
     "store.custom#login": {
       "path": "/cadastro"
+    },
+    "store.custom#allProduct": {
+      "path": "/produtos"
     }
   }
